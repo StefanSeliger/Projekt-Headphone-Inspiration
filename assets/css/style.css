@@ -1,0 +1,320 @@
+/* ===== General Styles ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Fonts Families and Colors
+font-family: 'Work Sans', sans-serif;
+Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115)
+*/
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    background: #2e2e2e; 
+}
+
+html, a {
+    color: rgba(234, 204, 194, 0.4); 
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(234, 204, 194, 1);
+    text-decoration: underline;
+}
+
+/* ===== Navigation Styles ===== */
+
+/* =  Top Navigation = */
+header nav {
+    padding: 3vh 4vw; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 3vh; 
+    left: 0;
+    right: 0; 
+}
+
+header nav ul {
+    list-style: none;
+    display: flex; 
+}
+
+header nav ul li {
+    margin-left: 25px;
+    font-size: 0.8rem;
+}
+
+/* =  Side Navigation = */
+aside {
+    display: flex; 
+    align-items: center;
+}
+
+aside nav {
+    position: fixed; 
+    top: 35vh; 
+    left: 4vw; 
+}
+
+aside nav article {
+    display: flex; 
+    margin: 2vh 0 0.5vh 0; 
+}
+
+aside nav article a {
+    margin-left: 10px; 
+}
+
+.asideCircleBorder {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px; 
+    position: relative;
+    z-index: 10; 
+    margin-left: -9px; 
+}
+
+.activeCircleBorder {
+    border: 2px solid rgba(234, 204, 194, 1); 
+}
+
+.activeNavigationPoint {
+    color: rgba(234, 204, 194, 1); 
+    font-weight: normal;
+}
+
+
+.asideCircleBorder:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 2px solid rgba(234, 204, 194, 0.7); 
+}
+
+.asideNavLine {
+    height: 50px; 
+    border-left: 1px solid rgba(234, 204, 194, 0.7); 
+}
+
+/* ===== Main Content Styles ===== */
+
+/* = General Main Content Styles = */
+
+
+
+/* = Pages Main Content Styles = */
+/* = About = */
+
+.aboutHeroSection {
+    padding: 10vh 4vw; 
+    text-align: center;
+}
+
+.aboutHeroSection h1 {
+    color: rgba(234, 204, 194, 1); 
+    font-weight: normal;
+    font-size: 2.5rem;
+    width: 30vw; 
+    margin: 20vh auto; 
+    text-align: left; 
+}
+
+.aboutHeroSection img {
+    width: 100%; 
+}
+
+.aboutArticle {
+    display: flex; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    padding: 10vh 15vw; 
+}
+
+.aboutArticle img {
+    width: 48%; 
+}
+
+.aboutArticle div {
+    width: 50%; 
+    padding: 5vh 0 5vh 5vw; 
+}
+
+.aboutArticle h2 {
+    margin: 3vh 0;  
+    font-size: 1.5rem;
+    color: rgba(234, 204, 194, 1); 
+    font-weight: normal;
+}
+
+.aboutArticle p {
+    margin: 3vh 0;  
+    line-height: 30px;
+}
+
+/* = Shared Styles Lounger Experience Shop = */
+.sharedStylesLES {
+    display: grid; 
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 100vh;
+}
+
+.bigImageContainer {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.bigImage {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+} 
+
+.bigImageNeighbor {
+    padding: 0 4vw; 
+}
+
+.bigImageNeighbor h2 {
+    margin: 25vh 0 12vh 0;  
+    font-size: 2rem;
+    color: rgba(234, 204, 194, 1); 
+    font-weight: normal;
+}
+
+.bigImageNeighbor p {
+    margin: 3vh 0;  
+    line-height: 30px;
+}
+
+/* Shop Styles */
+.bigImageNeighborShop {
+    text-align: center;
+
+}
+
+.bigImageNeighborShop {
+    text-align: center;
+}
+
+.bigImageNeighborShop img {
+    display: block; 
+    margin: 0 auto; 
+    padding: 10vh 0 3vh 0;  
+}
+
+.bigImageNeighborShop h2 {
+    margin: 0;  
+    font-size: 2rem;
+    color: rgba(234, 204, 194, 1); 
+    font-weight: normal;
+}
+
+.bigImageNeighborShop p:nth-of-type(1) {
+    margin-bottom: 3vh;  
+    line-height: 30px;
+}
+
+.bigImageNeighborShop p:nth-of-type(2) {
+    margin-bottom: 0;  
+    line-height: 30px;
+}
+
+.bigImageNeighborShop button {
+    padding: 8px 20px; 
+    border: none; 
+    border-radius: 3px; 
+    background: rgba(234, 204, 194, 1); 
+}
+
+/* Inspiration Styles */
+
+.inspirationPageVideoContainer {
+    margin: 20vh 15vw 10vh 15vw; 
+}
+
+.inspirationPageVideoContainer video {
+    width: 100%;
+}
+
+.inspirationPageContent {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh 50vh 50vh;
+    padding: 10vh 33vh; 
+    align-items: center;
+}
+
+.inspirationPageContent img {
+    width: 100%; 
+    height: 100%; 
+}
+
+.inspirationPageContent p {
+    line-height: 30px;
+}
+
+.inspirationPageImageBoxOne {
+    grid-column: 1/2; 
+    grid-row: 1/2;
+}
+
+.inspirationPageContentBoxOne span {
+    border: 1px solid rgba(234, 204, 194, 1); 
+    border-radius: 3px;
+    padding: 5px 15px; 
+    color: rgba(234, 204, 194, 1); 
+}
+
+.inspirationPageContentBoxOne p {
+    margin-top: 2vh; 
+}
+
+.inspirationPageContentBoxTwo {
+    grid-column: 2/3; 
+    grid-row: 1/2;
+}
+
+.inspirationPageImageOne {
+    grid-column: 1/2; 
+    grid-row: 2/3;
+}
+
+.inspirationPageContentBoxThree{
+    grid-column: 2/3; 
+    grid-row: 2/3;
+    padding: 0 1vw; 
+}
+
+.inspirationPageContentBoxFour {
+    grid-column: 1/2; 
+    grid-row: 3/4;
+    padding: 0 1vw; 
+}
+
+.inspirationPageContent h3 {
+    font-size: 1rem;
+    color: rgba(234, 204, 194, 1); 
+}
+
+.inspirationPageContent h2 {
+    margin: 2vh 0 5vh 0; 
+    font-size: 2rem;
+    color: rgba(234, 204, 194, 1); 
+    font-weight: normal;
+}
+
+
